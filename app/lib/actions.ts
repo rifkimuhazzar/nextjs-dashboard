@@ -123,6 +123,13 @@ export async function deleteInvoice(id: string) {
   }
 }
 
+export type User = {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+};
+
 export async function authenticate(
   prevState: string | undefined,
   formData: FormData
